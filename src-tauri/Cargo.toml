@@ -34,7 +34,7 @@ notify-rust = "4.11.7"
 tauri-plugin-os = "2.0.0"
 tauri-plugin-fs = "2.0.0"
 tauri-plugin-dialog = "2.0.0"
-tauri-plugin-http = { version = "2", features = ["unsafe-headers"] }
+tauri-plugin-http = { version = "2", features = ["unsafe-headers", "stream"] }
 tauri-plugin-clipboard-manager = "2.0.0"
 tauri-plugin-store = "2.0.0"
 tauri-plugin-process = "2"
