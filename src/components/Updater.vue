@@ -88,7 +88,8 @@ const checkUpdate = async (tips: boolean = false) => {
             background: 'rgba(0, 0, 0, 0.7)',
         })
     }
-    update = await check()
+    // updater 插件已移除,跳过检查
+    update = null
     if (update && isNew(update.version, packageJson.version)) {
         store.isUpdate = true
         rawJson.value = update.rawJson as any
