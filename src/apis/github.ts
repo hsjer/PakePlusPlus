@@ -190,14 +190,14 @@ export default {
     },
     // get pakeplus info
     getPakePlusInfo() {
-        return http(`/repos/Sjj1024/PakePlus/contents/package.json`, {
+        return http(`/repos/hsjer/PakePlus/contents/package.json`, {
             method: 'get',
         })
     },
     // get web config
     getWebConfig(fileName: string, branch: string) {
         return http(
-            `/repos/Sjj1024/PakePlus/contents/src-tauri/data/${fileName}`,
+            `/repos/hsjer/PakePlus/contents/src-tauri/data/${fileName}`,
             {
                 method: 'get',
                 params: {
@@ -215,7 +215,7 @@ export default {
     },
     // creat issue
     createIssue(body: any) {
-        return http(`/repos/Sjj1024/PakePlus/issues`, {
+        return http(`/repos/hsjer/PakePlus/issues`, {
             method: 'post',
             data: body,
         })
